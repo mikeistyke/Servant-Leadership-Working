@@ -15,8 +15,8 @@ export const PRINCIPLES: Principle[] = [
     takeaway: 'Listening is not a passive act; it is a discipline of silence and attention.',
     icon: 'fa-ear-listen',
     color: 'bg-blue-100 text-blue-700',
-    illustrationUrl: '/images/image-02.jpg', 
-    quoteStoneUrl: '/images/image-02.jpg'    
+    illustrationUrl: '/images/image-03.jpg', 
+    quoteStoneUrl: '/images/image-04.jpg'    
   },
   {
     id: 'p2',
@@ -27,7 +27,7 @@ export const PRINCIPLES: Principle[] = [
     icon: 'fa-heart',
     color: 'bg-rose-100 text-rose-700',
     illustrationUrl: '/images/image-07.jpg', // Updated to latest asset
-    quoteStoneUrl: '/images/image-07.jpg'    // Updated to latest asset
+    quoteStoneUrl: '/images/image-08.jpg'    // Updated to latest asset
   },
   {
     id: 'p3',
@@ -38,7 +38,7 @@ export const PRINCIPLES: Principle[] = [
     icon: 'fa-hand-holding-heart',
     color: 'bg-emerald-100 text-emerald-700',
     illustrationUrl: '/images/image-09.jpg',
-    quoteStoneUrl: '/images/image-09.jpg'
+    quoteStoneUrl: '/images/image-10.jpg'
   },
   {
     id: 'p4',
@@ -49,7 +49,7 @@ export const PRINCIPLES: Principle[] = [
     icon: 'fa-eye',
     color: 'bg-amber-100 text-amber-700',
     illustrationUrl: '/images/image-06.jpg',
-    quoteStoneUrl: '/images/image-06.jpg'
+    quoteStoneUrl: '/images/image-05.jpg'
   },
   {
     id: 'p5',
@@ -60,7 +60,7 @@ export const PRINCIPLES: Principle[] = [
     icon: 'fa-comments',
     color: 'bg-indigo-100 text-indigo-700',
     illustrationUrl: '/images/image-15.jpg',
-    quoteStoneUrl: '/images/image-15.jpg'
+    quoteStoneUrl: '/images/image-16.jpg'
   },
   {
     id: 'p6',
@@ -71,7 +71,7 @@ export const PRINCIPLES: Principle[] = [
     icon: 'fa-lightbulb',
     color: 'bg-purple-100 text-purple-700',
     illustrationUrl: '/images/image-11.jpg',
-    quoteStoneUrl: '/images/image-11.jpg'
+    quoteStoneUrl: '/images/image-12.jpg'
   },
   {
     id: 'p7',
@@ -82,7 +82,7 @@ export const PRINCIPLES: Principle[] = [
     icon: 'fa-arrow-trend-up',
     color: 'bg-cyan-100 text-cyan-700',
     illustrationUrl: '/images/image-13.jpg',
-    quoteStoneUrl: '/images/image-13.jpg'
+    quoteStoneUrl: '/images/image-14.jpg'
   },
   {
     id: 'p8',
@@ -93,7 +93,7 @@ export const PRINCIPLES: Principle[] = [
     icon: 'fa-shield-halved',
     color: 'bg-teal-100 text-teal-700',
     illustrationUrl: '/images/image-17.jpg',
-    quoteStoneUrl: '/images/image-17.jpg'
+    quoteStoneUrl: '/images/image-18.jpg'
   },
   {
     id: 'p9',
@@ -104,7 +104,7 @@ export const PRINCIPLES: Principle[] = [
     icon: 'fa-seedling',
     color: 'bg-green-100 text-green-700',
     illustrationUrl: '/images/image-19.jpg',
-    quoteStoneUrl: '/images/image-19.jpg'
+    quoteStoneUrl: '/images/image-20.jpg'
   },
   {
     id: 'p10',
@@ -115,7 +115,7 @@ export const PRINCIPLES: Principle[] = [
     icon: 'fa-users',
     color: 'bg-orange-100 text-orange-700',
     illustrationUrl: '/images/image-21.jpg',
-    quoteStoneUrl: '/images/image-21.jpg'
+    quoteStoneUrl: '/images/image-22.jpg'
   }
 ];
 
