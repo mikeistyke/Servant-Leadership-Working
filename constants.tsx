@@ -15,8 +15,8 @@ export const PRINCIPLES: Principle[] = [
     takeaway: 'Listening is not a passive act; it is a discipline of silence and attention.',
     icon: 'fa-ear-listen',
     color: 'bg-blue-100 text-blue-700',
-    illustrationUrl: '/images/listening.png', 
-    quoteStoneUrl: '/images/listeningtext.png'    
+    illustrationUrl: '/images/image-02.jpg', 
+    quoteStoneUrl: '/images/image-02.jpg'    
   },
   {
     id: 'p2',
@@ -26,8 +26,8 @@ export const PRINCIPLES: Principle[] = [
     takeaway: 'Empathy requires suspending judgment to truly stand in another\'s shoes.',
     icon: 'fa-heart',
     color: 'bg-rose-100 text-rose-700',
-    illustrationUrl: '/images/empathy.png', // Updated to latest asset
-    quoteStoneUrl: '/images/empathytext.png'    // Updated to latest asset
+    illustrationUrl: '/images/image-07.jpg', // Updated to latest asset
+    quoteStoneUrl: '/images/image-07.jpg'    // Updated to latest asset
   },
   {
     id: 'p3',
@@ -37,8 +37,8 @@ export const PRINCIPLES: Principle[] = [
     takeaway: 'Leadership is a restorative act; we mend the fabric of the team.',
     icon: 'fa-hand-holding-heart',
     color: 'bg-emerald-100 text-emerald-700',
-    illustrationUrl: '/images/healing.png',
-    quoteStoneUrl: '/images/healingtext.png'
+    illustrationUrl: '/images/image-09.jpg',
+    quoteStoneUrl: '/images/image-09.jpg'
   },
   {
     id: 'p4',
@@ -48,8 +48,8 @@ export const PRINCIPLES: Principle[] = [
     takeaway: 'You cannot lead others until you clearly see yourself.',
     icon: 'fa-eye',
     color: 'bg-amber-100 text-amber-700',
-    illustrationUrl: '/images/awareness.png',
-    quoteStoneUrl: '/images/awarenesstext.png'
+    illustrationUrl: '/images/image-06.jpg',
+    quoteStoneUrl: '/images/image-06.jpg'
   },
   {
     id: 'p5',
@@ -59,8 +59,8 @@ export const PRINCIPLES: Principle[] = [
     takeaway: 'Influence is earned through consensus, not commanded through rank.',
     icon: 'fa-comments',
     color: 'bg-indigo-100 text-indigo-700',
-    illustrationUrl: '/images/persuasion.png',
-    quoteStoneUrl: '/images/persuasiontext.png'
+    illustrationUrl: '/images/image-15.jpg',
+    quoteStoneUrl: '/images/image-15.jpg'
   },
   {
     id: 'p6',
@@ -70,8 +70,8 @@ export const PRINCIPLES: Principle[] = [
     takeaway: 'We must balance the granular details with the grand vision.',
     icon: 'fa-lightbulb',
     color: 'bg-purple-100 text-purple-700',
-    illustrationUrl: '/images/conceptualization.png',
-    quoteStoneUrl: '/images/conceptualizationtext.png'
+    illustrationUrl: '/images/image-11.jpg',
+    quoteStoneUrl: '/images/image-11.jpg'
   },
   {
     id: 'p7',
@@ -81,8 +81,8 @@ export const PRINCIPLES: Principle[] = [
     takeaway: 'Predicting the future is impossible; preparing for it is essential.',
     icon: 'fa-arrow-trend-up',
     color: 'bg-cyan-100 text-cyan-700',
-    illustrationUrl: '/images/foresight.png',
-    quoteStoneUrl: '/images/foresighttext.png'
+    illustrationUrl: '/images/image-13.jpg',
+    quoteStoneUrl: '/images/image-13.jpg'
   },
   {
     id: 'p8',
@@ -92,8 +92,8 @@ export const PRINCIPLES: Principle[] = [
     takeaway: 'We do not own the team or the company; we are temporary caretakers.',
     icon: 'fa-shield-halved',
     color: 'bg-teal-100 text-teal-700',
-    illustrationUrl: '/images/stewardship.png',
-    quoteStoneUrl: '/images/stewardshiptext.png'
+    illustrationUrl: '/images/image-17.jpg',
+    quoteStoneUrl: '/images/image-17.jpg'
   },
   {
     id: 'p9',
@@ -103,8 +103,8 @@ export const PRINCIPLES: Principle[] = [
     takeaway: 'Success is measured by how much your team grows, not just the profits.',
     icon: 'fa-seedling',
     color: 'bg-green-100 text-green-700',
-    illustrationUrl: '/images/commitment.png',
-    quoteStoneUrl: '/images/commitmenttext.png'
+    illustrationUrl: '/images/image-19.jpg',
+    quoteStoneUrl: '/images/image-19.jpg'
   },
   {
     id: 'p10',
@@ -114,8 +114,8 @@ export const PRINCIPLES: Principle[] = [
     takeaway: 'A team is a workforce; a community is a support system.',
     icon: 'fa-users',
     color: 'bg-orange-100 text-orange-700',
-    illustrationUrl: '/images/building.png',
-    quoteStoneUrl: '/images/buildingtext.png'
+    illustrationUrl: '/images/image-21.jpg',
+    quoteStoneUrl: '/images/image-21.jpg'
   }
 ];
 

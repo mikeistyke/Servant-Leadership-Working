@@ -6,20 +6,29 @@ import { Principle } from '../types';
 const PrinciplesGrid: React.FC = () => {
   const [selected, setSelected] = useState<Principle | null>(null);
 
-  return (
-    <div className="space-y-8 animate-fadeIn">
-      <header className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-        <div>
-          <h2 className="text-4xl font-bold mb-2">The 10 Characteristics</h2>
-          <p className="text-slate-600 max-w-2xl">Robert K. Greenleaf's fundamental traits for those who seek to serve first, then lead.</p>
-        </div>
-        <div className="bg-teal-50 px-4 py-2 rounded-full border border-teal-100 shadow-sm">
-          <span className="text-teal-700 text-sm font-medium">
-            <i className="fa-solid fa-mountain mr-2"></i>
-            Click a card to reveal the Wisdom Stone
-          </span>
-        </div>
-      </header>
+return (
+  <div className="space-y-8 animate-fadeIn">
+    {/* TEMP TEST: remove later */}
+    <img
+      src="/images/image-02.jpg"
+      alt="Test image"
+      className="w-64 h-auto border-4 border-red-500"
+    />
+
+    <header className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+      <div>
+        <h2 className="text-4xl font-bold mb-2">The 10 Characteristics</h2>
+        <p className="text-slate-600 max-w-2xl">
+          Robert K. Greenleaf&apos;s fundamental traits for those who seek to serve first, then lead.
+        </p>
+      </div>
+      <div className="bg-teal-50 px-4 py-2 rounded-full border border-teal-100 shadow-sm">
+        <span className="text-teal-700 text-sm font-medium">
+          <i className="fa-solid fa-mountain mr-2"></i>
+          Click a card to reveal the Wisdom Stone
+        </span>
+      </div>
+    </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {PRINCIPLES.map((p, idx) => (

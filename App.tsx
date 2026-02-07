@@ -63,7 +63,7 @@ const App: React.FC = () => {
                 <div className="relative lg:block">
                   <div className="rounded-[3rem] overflow-hidden shadow-2xl border-4 border-slate-800 group bg-slate-800 aspect-[4/3] flex items-center justify-center relative">
                     <img 
-                      src="input_file_2.png" 
+                      src="/images/image-01.jpg" 
                       alt="The Foundation of Empathy" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2000ms]"
                     />
