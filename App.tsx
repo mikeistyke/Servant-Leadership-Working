@@ -163,7 +163,7 @@ const App: React.FC = () => {
           <div className="max-w-4xl mx-auto space-y-12 py-10 animate-fadeIn">
             <div className="text-center space-y-6">
               <div className="inline-flex items-center justify-center w-28 h-28 rounded-[3rem] bg-teal-50 text-teal-600 shadow-xl shadow-teal-500/10 mb-2 border border-teal-100">
-                <i className="fa-solid fa-moon-stars text-5xl"></i>
+                <i className="fa-solid fa-dove text-5xl"></i>
               </div>
               <h2 className="text-6xl font-black tracking-tight heading-font">The Inner Voice</h2>
               <p className="text-slate-400 text-xl font-serif italic">Pause. Listen. Realign.</p>
