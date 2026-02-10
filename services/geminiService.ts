@@ -9,14 +9,21 @@ export const getDailyReflection = async (): Promise<string> => {
   const ai = getAIClient();
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-3-flash-preview',
+      model: 'gemini-2.0-flash',
       contents: "Generate a unique daily reflection prompt and a short inspirational quote about Servant Leadership. Format it nicely with a 'Quote of the Day' and a 'Reflection Question'.",
       config: {
         temperature: 0.8,
         maxOutputTokens: 300
       }
     });
-    return response.text || "Unable to generate reflection at this time.";
+    
+    // Handle different possible response structures
+    const text = response.text || 
+                 response?.response?.text || 
+                 response?.candidates?.[0]?.content?.parts?.[0]?.text ||
+                 "Unable to generate reflection at this time.";
+    
+    return text;
   } catch (error) {
     console.error("Gemini Error:", error);
     return "The path to wisdom is currently obscured. Please try again later.";
