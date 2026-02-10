@@ -88,7 +88,7 @@ const App: React.FC = () => {
               <div className="bg-white rounded-[3rem] shadow-sm border border-slate-100 flex flex-col h-full hover:shadow-xl transition-all duration-500 group/card overflow-hidden">
                 <div className="h-64 relative overflow-hidden bg-slate-100 flex items-center justify-center">
                   <img 
-                    src="input_file_2.png" 
+                    src="images/image-10.jpg" 
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110"
                     alt="Servant Leadership Visualization"
                   />
@@ -135,7 +135,7 @@ const App: React.FC = () => {
                   <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-8 border border-white/30 shadow-inner group-hover/coach:-translate-y-2 transition-transform">
                      <i className="fa-solid fa-robot text-3xl text-white"></i>
                   </div>
-                  <h3 className="text-4xl font-black mb-6 heading-font">Mentor On Demand</h3>
+                  <h3 className="text-4xl font-black mb-6 heading-font">Chat With AI Mentor </h3>
                   <p className="text-teal-50 text-xl leading-relaxed opacity-90 font-medium max-w-xs">
                     Apply Robert Greenleaf's 10 principles to your specific daily challenges.
                   </p>
