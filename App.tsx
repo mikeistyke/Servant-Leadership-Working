@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Layout from './components/Layout';
 import PrinciplesGrid from './components/Principles';
 import Assessment from './components/Assessment';
+import Credits from './components/Credits';
 import { View } from './types';
 
 const App: React.FC = () => {
@@ -73,6 +74,8 @@ const App: React.FC = () => {
         return <PrinciplesGrid />;
       case View.ASSESSMENT:
         return <Assessment />;
+      case View.CREDITS:
+        return <Credits />;
       default:
         return null;
     }

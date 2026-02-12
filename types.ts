@@ -25,5 +25,6 @@ export interface ChatMessage {
 export enum View {
   HOME = 'home',
   PRINCIPLES = 'principles',
-  ASSESSMENT = 'assessment'
+  ASSESSMENT = 'assessment',
+  CREDITS = 'credits'
 }
