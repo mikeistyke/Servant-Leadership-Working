@@ -37,18 +37,6 @@ const Layout: React.FC<LayoutProps> = ({ children, currentView, onNavigate }) =>
             icon="fa-clipboard-check" 
             label="Self-Assessment" 
           />
-          <NavItem 
-            active={currentView === View.COACH} 
-            onClick={() => onNavigate(View.COACH)} 
-            icon="fa-user-tie" 
-            label="AI Coach" 
-          />
-          <NavItem 
-            active={currentView === View.REFLECTION} 
-            onClick={() => onNavigate(View.REFLECTION)} 
-            icon="fa-cloud-sun" 
-            label="Daily Reflection" 
-          />
         </div>
 
         <div className="p-6 border-t border-slate-800 hidden md:block">
