@@ -12,7 +12,44 @@ const Credits: React.FC = () => {
         <p className="text-slate-500 text-xl font-serif italic">Built with gratitude and purpose</p>
       </div>
 
-      {/* Credits Grid */}
+      {/* Creator's Vision - Featured Section */}
+      <div className="mb-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white p-12 md:p-16 rounded-[3rem] shadow-2xl border border-slate-700">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <div className="text-center space-y-3">
+            <p className="text-teal-400 font-black uppercase tracking-widest text-sm">Creator & Founder</p>
+            <h2 className="text-5xl font-black heading-font mb-2">Michael Cirigliano</h2>
+          </div>
+          
+          <div className="space-y-6">
+            <div>
+              <p className="text-slate-300 text-lg font-semibold mb-2">Vision</p>
+              <p className="text-slate-100 text-xl italic leading-relaxed">
+                "Created to illuminate and promote Robert Greenleaf's Servant Leadership principles for modern business leaders"
+              </p>
+            </div>
+
+            <div>
+              <p className="text-slate-300 text-lg font-semibold mb-2">Commitment</p>
+              <p className="text-slate-100 leading-relaxed">
+                I am committed to fostering a servant leadership culture through listening first, serving with humility, and developing people through consistent support and accountability.
+              </p>
+            </div>
+
+            <div className="flex items-center space-x-2 text-slate-200">
+              <i className="fa-solid fa-globe text-teal-400"></i>
+              <a 
+                href="https://vibinginva.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-teal-400 hover:text-teal-300 font-semibold underline transition-colors"
+              >
+                vibinginva.com
+              </a>
+              <span className="text-slate-500 text-sm">(in development)</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Robert Greenleaf */}
         <div className="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-lg transition-all">
