@@ -144,7 +144,13 @@ const Credits: React.FC = () => {
       {/* Footer Note */}
       <div className="text-center space-y-4 pt-8 border-t border-slate-200">
         <p className="text-slate-600 font-medium">
-          Built with purpose and passion for servant leadership
+          Built with purpose and passion for servant leadership{' '}
+          <a
+            href="mailto:tykecirigliano@gmail.com"
+            className="text-teal-600 hover:text-teal-500 underline transition-colors"
+          >
+            Get in Touch With Tyke
+          </a>
         </p>
         <p className="text-sm text-slate-500">
           © 2026 Servant Leadership Hub. All rights reserved.
