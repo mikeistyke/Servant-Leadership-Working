@@ -1,4 +1,4 @@
-import { getAiClient, getModel, json, parseBody } from './_gemini.js';
+import { generateContentWithFallback, getAiClient, getErrorMessage, json, parseBody } from './_gemini.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -10,8 +10,7 @@ export default async function handler(req, res) {
     const prompt = `Analyze these servant leadership trait scores (out of 5): ${JSON.stringify(scores)}. Provide a brief summary of strengths and one actionable growth area based on these principles. Keep it encouraging and professional.`;
 
     const ai = getAiClient();
-    const response = await ai.models.generateContent({
-      model: getModel(),
+    const response = await generateContentWithFallback(ai, {
       contents: prompt
     });
 
@@ -19,6 +18,6 @@ export default async function handler(req, res) {
     return json(res, 200, { text });
   } catch (error) {
     console.error('Vercel /api/analyze-assessment error:', error);
-    return json(res, 500, { error: 'Failed to analyze assessment' });
+    return json(res, 500, { error: `Failed to analyze assessment: ${getErrorMessage(error)}` });
   }
 }

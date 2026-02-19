@@ -1,4 +1,4 @@
-import { getAiClient, getModel, json } from './_gemini.js';
+import { generateContentWithFallback, getAiClient, getErrorMessage, json } from './_gemini.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'GET' && req.method !== 'POST') {
@@ -7,8 +7,7 @@ export default async function handler(req, res) {
 
   try {
     const ai = getAiClient();
-    const response = await ai.models.generateContent({
-      model: getModel(),
+    const response = await generateContentWithFallback(ai, {
       contents: "Generate a unique daily reflection prompt and a short inspirational quote about Servant Leadership. Format it nicely with a 'Quote of the Day' and a 'Reflection Question'.",
       config: {
         temperature: 0.8,
@@ -20,6 +19,6 @@ export default async function handler(req, res) {
     return json(res, 200, { text });
   } catch (error) {
     console.error('Vercel /api/daily-reflection error:', error);
-    return json(res, 500, { error: 'Failed to get daily reflection' });
+    return json(res, 500, { error: `Failed to get daily reflection: ${getErrorMessage(error)}` });
   }
 }
