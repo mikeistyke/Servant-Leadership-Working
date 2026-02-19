@@ -17,7 +17,7 @@ const Credits: React.FC = () => {
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="text-center space-y-3">
             <p className="text-teal-400 font-black uppercase tracking-widest text-sm">Creator & Founder</p>
-            <h2 className="text-5xl font-black heading-font mb-2">Michael Cirigliano</h2>
+            <h2 className="text-5xl font-black heading-font mb-2">Michael "Tyke" Cirigliano</h2>
           </div>
           
           <div className="space-y-6">
