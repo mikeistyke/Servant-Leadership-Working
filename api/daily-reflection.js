@@ -1,6 +1,10 @@
-import { generateContentWithFallback, getAiClient, getErrorMessage, json } from './_gemini.js';
+import { enforceRequestPolicy, generateContentWithFallback, getAiClient, getErrorMessage, json } from './_gemini.js';
 
 export default async function handler(req, res) {
+  if (!enforceRequestPolicy(req, res)) {
+    return;
+  }
+
   if (req.method !== 'GET' && req.method !== 'POST') {
     return json(res, 405, { error: 'Method not allowed' });
   }

@@ -1,6 +1,12 @@
 import { GoogleGenAI } from '@google/genai';
 
 const MODELS = ['gemini-2.0-flash', 'gemini-1.5-flash'];
+const DEFAULT_ALLOWED_ORIGINS = [
+  'https://servant-leadership-working.vercel.app',
+  'http://localhost:3000',
+  'http://localhost:5173'
+];
+const MAX_CONTENT_LENGTH = 20000;
 
 export const getAiClient = () => {
   const apiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || process.env.API_KEY;
@@ -20,6 +26,33 @@ export const parseBody = (req) => {
     }
   }
   return req.body;
+};
+
+const getAllowedOrigins = () => {
+  const custom = process.env.ALLOWED_ORIGINS;
+  if (!custom) return DEFAULT_ALLOWED_ORIGINS;
+  return custom
+    .split(',')
+    .map((origin) => origin.trim())
+    .filter(Boolean);
+};
+
+export const enforceRequestPolicy = (req, res) => {
+  const origin = req.headers?.origin;
+  const allowedOrigins = getAllowedOrigins();
+
+  if (origin && !allowedOrigins.includes(origin)) {
+    json(res, 403, { error: 'Forbidden origin' });
+    return false;
+  }
+
+  const contentLength = Number(req.headers?.['content-length'] || 0);
+  if (contentLength > MAX_CONTENT_LENGTH) {
+    json(res, 413, { error: 'Payload too large' });
+    return false;
+  }
+
+  return true;
 };
 
 export const json = (res, status, payload) => {
