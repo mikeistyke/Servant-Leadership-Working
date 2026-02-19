@@ -3,9 +3,9 @@ import { GoogleGenAI } from '@google/genai';
 const MODELS = ['gemini-2.0-flash', 'gemini-1.5-flash'];
 
 export const getAiClient = () => {
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || process.env.API_KEY;
   if (!apiKey || apiKey === 'PLACEHOLDER_API_KEY') {
-    throw new Error('GEMINI_API_KEY is not configured on the server');
+    throw new Error('Missing API key on server. Set GEMINI_API_KEY (or GOOGLE_API_KEY/API_KEY) in Vercel Project Environment Variables and redeploy.');
   }
   return new GoogleGenAI({ apiKey });
 };
