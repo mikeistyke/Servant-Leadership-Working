@@ -149,7 +149,7 @@ const Credits: React.FC = () => {
             href="mailto:tykecirigliano@gmail.com"
             className="text-teal-600 hover:text-teal-500 underline transition-colors"
           >
-            Get in Touch With Tyke
+            In Touch With Tyke
           </a>
         </p>
         <p className="text-sm text-slate-500">
