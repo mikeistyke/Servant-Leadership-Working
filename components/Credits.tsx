@@ -24,7 +24,7 @@ const Credits: React.FC = () => {
             <div>
               <p className="text-slate-300 text-lg font-semibold mb-2">Vision</p>
               <p className="text-slate-100 text-xl italic leading-relaxed">
-                "Created to illuminate and promote Robert Greenleaf's Servant Leadership principles for modern business leaders"
+                Created to illuminate and promote Robert Greenleaf's Servant Leadership principles for modern business leaders
               </p>
             </div>
 
@@ -134,7 +134,7 @@ const Credits: React.FC = () => {
       {/* Mission Statement */}
       <div className="bg-gradient-to-br from-teal-50 to-emerald-50 p-12 rounded-[3rem] border border-teal-200 shadow-lg">
         <div className="text-center space-y-6">
-          <h2 className="text-4xl font-black heading-font text-slate-900">Our Mission</h2>
+          <h2 className="text-4xl font-black heading-font text-slate-900">My Project Mission</h2>
           <p className="text-lg text-slate-700 leading-relaxed max-w-3xl mx-auto">
             To provide leaders and individuals with practical tools to understand and apply Robert Greenleaf's servant leadership principles in their daily lives, fostering a culture of service, empathy, and sustainable leadership.
           </p>
