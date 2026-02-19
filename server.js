@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { getDailyReflection } from './services/geminiService.js';
+import { getDailyReflection, getCoachResponse, analyzeAssessment } from './services/geminiService.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 console.log('📁 Current directory:', __dirname);
@@ -45,6 +45,39 @@ app.get('/api/daily-reflection', async (req, res) => {
   } catch (err) {
     console.error('❌ Server /api/daily-reflection error:', err.message);
     res.status(500).json({ error: err.message || 'Failed to get daily reflection' });
+  }
+});
+
+app.post('/api/daily-reflection', async (req, res) => {
+  try {
+    console.log('📝 Fetching daily reflection...');
+    const text = await getDailyReflection();
+    res.json({ text });
+  } catch (err) {
+    console.error('❌ Server /api/daily-reflection error:', err.message);
+    res.status(500).json({ error: err.message || 'Failed to get daily reflection' });
+  }
+});
+
+app.post('/api/coach-response', async (req, res) => {
+  try {
+    const { history = [], message = '' } = req.body || {};
+    const text = await getCoachResponse(history, message);
+    res.json({ text });
+  } catch (err) {
+    console.error('❌ Server /api/coach-response error:', err.message);
+    res.status(500).json({ error: err.message || 'Failed to get coach response' });
+  }
+});
+
+app.post('/api/analyze-assessment', async (req, res) => {
+  try {
+    const { scores = {} } = req.body || {};
+    const text = await analyzeAssessment(scores);
+    res.json({ text });
+  } catch (err) {
+    console.error('❌ Server /api/analyze-assessment error:', err.message);
+    res.status(500).json({ error: err.message || 'Failed to analyze assessment' });
   }
 });
 
